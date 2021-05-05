@@ -1,0 +1,40 @@
+/* цвет основного текста #757575
+   цвет заголовков #212121
+   акцент #2196F3
+   белый текст #FFFFFF
+   контакты в футере rgba(255, 255, 255, 0.6)
+   фон для кнопок #F5F4FA
+   вторичный цвет фона #F5F4FA; #2F303A
+   */
+body {
+  background-color: #ffffff;
+  color: #757575;
+}
+
+/* Стилизация логотипа */
+.logo {
+  color: #000000;
+}
+.accent-logo {
+  color: #2196f3;
+}
+
+.list {
+  list-style: none;
+}
+
+/* Стилизация панели навигации */
+.nav-list .link {
+  color: #212121;
+}
+.nav-list .link:hover,
+.nav-list .link:focus {
+  color: #2196f3;
+}
+.contacts-nav .link {
+  color: #757575;
+}
+.contacts-nav .link:hover,
+.contacts-nav .link:focus {
+  color: #2196f3;
+}
