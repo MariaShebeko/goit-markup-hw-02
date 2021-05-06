@@ -1,14 +1,12 @@
-/* цвет основного текста #757575
-   цвет заголовков #212121
-   акцент #2196F3
-   белый текст #FFFFFF
-   контакты в футере rgba(255, 255, 255, 0.6)
-   фон для кнопок #F5F4FA
-   вторичный цвет фона #F5F4FA; #2F303A
-   */
+:root {
+  --primery-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+}
+
 body {
   background-color: #ffffff;
-  color: #757575;
+  color: var(--primery-text-color);
 }
 
 /* Стилизация логотипа */
@@ -16,7 +14,7 @@ body {
   color: #000000;
 }
 .accent-logo {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 
 .list {
@@ -25,16 +23,90 @@ body {
 
 /* Стилизация панели навигации */
 .nav-list .link {
-  color: #212121;
+  color: var(--title-text-color);
 }
 .nav-list .link:hover,
 .nav-list .link:focus {
-  color: #2196f3;
+  color: var(--accent-color);
 }
+.nav-list .link.current {
+  color: var(--accent-color);
+}
+
 .contacts-nav .link {
-  color: #757575;
+  color: var(--primery-text-color);
 }
 .contacts-nav .link:hover,
 .contacts-nav .link:focus {
-  color: #2196f3;
+  color: var(--accent-color);
+}
+
+/* Hero */
+
+.hero {
+  background-color: #2f303a;
+}
+.hero-title {
+  color: #fff;
+}
+.main-button {
+  color: #fff;
+  background-color: var(--accent-color);
+}
+/* Sections */
+.section-title {
+  color: var(--title-text-color);
+}
+
+/* Advantages Section */
+.advantages-list .title {
+  color: var(--title-text-color);
+}
+
+/* Our team section */
+.team-list .title {
+  color: var(--title-text-color);
+}
+
+/* Footer */
+.footer {
+  background-color: #2f303a;
+}
+.logo-light {
+  color: #fff;
+}
+.address {
+  color: #fff;
+}
+.footer-contact {
+  color: rgba(255, 255, 255, 0.6);
+}
+.footer-contact:hover,
+.footer-contact:focus {
+  color: var(--accent-color);
+}
+
+/* Portfolio page */
+
+/* Our works section */
+.works-title {
+  opacity: 0;
+}
+.button {
+  color: var(--title-text-color);
+  background-color: #f5f4fa;
+}
+.button:hover,
+.button:focus,
+.button:active {
+  color: #fff;
+  background-color: var(--accent-color);
+}
+
+/* Galery section */
+.work-items .title {
+  color: var(--title-text-color);
+}
+.work-items a {
+  color: var(--primery-text-color);
 }
