@@ -14,7 +14,7 @@ body {
   line-height: 1.71;
 }
 
-/* Стилизация логотипа */
+/* =========== Стилизация логотипа =========*/
 .logo {
   color: #000000;
 
@@ -31,7 +31,11 @@ body {
   list-style: none;
 }
 
-/* Стилизация панели навигации */
+/* ============== Стилизация панели навигации =====*/
+.navigation a,
+.contacts-nav a {
+  text-decoration: none;
+}
 .nav-list .link {
   color: var(--title-text-color);
 
@@ -61,7 +65,7 @@ body {
   color: var(--accent-color);
 }
 
-/* Hero */
+/* =========== Hero =============*/
 
 .hero {
   background-color: #2f303a;
@@ -94,13 +98,14 @@ body {
 /* Sections */
 .section-title {
   color: var(--title-text-color);
+
   font-weight: bold;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
 }
 
-/* Advantages Section */
+/* ============= Advantages Section =========*/
 .advantages-list .title {
   color: var(--title-text-color);
 
@@ -110,7 +115,10 @@ body {
   text-transform: uppercase;
 }
 
-/* Our team section */
+/* ========== Our team section ===========*/
+.team-section {
+  background-color: #f5f4fa;
+}
 .team-list .title {
   color: var(--title-text-color);
 
@@ -124,12 +132,16 @@ body {
   line-height: 1.18;
   text-align: center;
 }
-/* Footer */
+/* =========== Footer =========*/
 .footer {
   background-color: #2f303a;
 }
+.footer a {
+  text-decoration: none;
+}
 .logo-light {
   color: #fff;
+
   font-family: Raleway, sans-serif;
   font-weight: bold;
   font-size: 26px;
@@ -140,6 +152,7 @@ body {
 }
 .footer-contact {
   color: rgba(255, 255, 255, 0.6);
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -150,9 +163,9 @@ body {
   color: var(--accent-color);
 }
 
-/* Portfolio page */
+/* ============== Portfolio page =============*/
 
-/* Our works section */
+/* ============ Our works section ==========*/
 .works-title {
   opacity: 0;
 }
@@ -165,6 +178,7 @@ body {
   font-size: 16px;
   line-height: 1, 62;
   text-align: center;
+  cursor: pointer;
 }
 .button:hover,
 .button:focus,
@@ -173,7 +187,7 @@ body {
   background-color: var(--accent-color);
 }
 
-/* Galery section */
+/* ============ Galery section ============*/
 .work-items .title {
   color: var(--title-text-color);
 
